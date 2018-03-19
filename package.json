@@ -5,7 +5,7 @@
   "main": "dist/yamux.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.spec.ts",
-    "prepare": "tsc src/yamux.ts"
+    "prepublish": "./node_modules/.bin/tsc -p ."
   },
   "repository": {
     "type": "git",
