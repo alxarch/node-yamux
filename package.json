@@ -1,0 +1,31 @@
+{
+  "name": "yamux",
+  "version": "0.0.1",
+  "description": "Stream multiplexer combatible with Hashicorp's yamux",
+  "main": "dist/yamux.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.spec.ts",
+    "prepare": "tsc src/yamux.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxarch/node-yamux.git"
+  },
+  "keywords": [
+    "multiplexer",
+    "yamux"
+  ],
+  "author": "Sigalas Alexandros <alxarch@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxarch/node-yamux/issues"
+  },
+  "homepage": "https://github.com/alxarch/node-yamux#readme",
+  "devDependencies": {
+    "typescript": "^2.7.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.7",
+    "mocha": "^5.0.4",
+    "ts-node": "^5.0.1"
+  }
+}
